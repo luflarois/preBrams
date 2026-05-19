@@ -79,6 +79,32 @@ sudo cp ./lib/*.mod {YOUR_DIR}/include/
 cd ..
 ```
 
+## install the fpm (Fortran Package Manager)
+
+FPM is a system to install a Fortran Package. You can get the software 
+#### For Linux: (check the version)
+```
+wget https://github.com/fortran-lang/fpm/releases/download/v0.10.1/fpm-0.10.1-linux-x86_64
+chmod u+x fpm-0.10.1-linux-x86_64
+sudo mv fpm-0.10.1-linux-x86_64 /usr/local/bin/fpm
+```
+#### For MAcOS (Homebrew):
+```
+brew install fpm
+```
+#### Using Conda
+```
+conda create -n fpm fpm
+conda activate fpm
+```
+#### Clonning:
+```
+git clone https://github.com/fortran-lang/fpm
+cd fpm
+./build.sh
+```
+After building the app will be in build/gcc/fpm, You can move it to your path.
+
 ## Build preBrams
 
 Now, go to preBrams directory end build the app:
