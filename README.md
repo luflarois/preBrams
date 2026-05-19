@@ -88,7 +88,15 @@ fpm build --flag "-I<Your Include dir>/include" --flag "-L<Your_lib_dir>/lib"
 fpm install
 ```
 
-The app will be installed in <Your home dir>/.local/bin/preBrams
+---
+
+
+
+### The app will be installed in  **YourHomeDirectory/.local/bin/preBrams***
+
+---
+
+
 
 ## Namelist
 
@@ -139,4 +147,12 @@ $END
 
 After You create the namelist, just run the app and the CI/CC files will be created.
 
-Att: To run the app You must have the GFS or ERA5 data.
+
+
+```
+YourHomeDirectory/.local/bin/preBrams
+```
+
+
+
+Att: To run the app You must have the GFS or ERA5 data. If You will use chemistry background You must have datafix_cams data.
